@@ -13,3 +13,8 @@
 # Logs / temp
 *.log
 *.tmp
+
+# Local backups / working files
+index_backup*.html
+headshot.jpeg
+*.pdf

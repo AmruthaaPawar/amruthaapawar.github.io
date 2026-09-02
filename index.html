@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Amruta Pawar — Senior Technical Program Manager</title>
-<meta name="description" content="Portfolio of Amruta Pawar, a Senior Technical Program Manager driving large-scale, cross-functional technology programs from strategy to delivery." />
+<title>Amruta Pawar — Principal Technical Program Manager</title>
+<meta name="description" content="Portfolio of Amruta Pawar, a Principal Technical Program Manager driving large-scale, cross-functional technology programs from strategy to delivery." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -84,7 +84,7 @@ header.nav{
   border-bottom:1px solid var(--border);
 }
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px}
-.brand{font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.4rem;letter-spacing:-.01em;background:var(--grad-deep);-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand{font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.75rem;letter-spacing:-.01em;background:var(--grad-deep);-webkit-background-clip:text;background-clip:text;color:transparent}
 .brand span{-webkit-text-fill-color:var(--cyan);color:var(--cyan)}
 .nav-links{display:flex;gap:30px;align-items:center}
 .nav-links a{font-size:.92rem;color:var(--slate);font-weight:500;transition:color .2s}
@@ -118,6 +118,8 @@ header.nav{
 .hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.3fr .9fr;gap:56px;align-items:center}
 .hero .tag{display:inline-flex;align-items:center;gap:9px;background:var(--surface);border:1px solid var(--accent-ice);padding:8px 16px;border-radius:999px;font-size:.82rem;color:var(--slate);margin-bottom:26px;box-shadow:0 0 0 1px rgba(122,167,255,.35),0 0 20px rgba(31,92,255,.28),0 0 36px rgba(6,198,217,.16)}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 4px rgba(6,198,217,.18)}
+.hero-avatar{width:132px;height:132px;border-radius:50%;object-fit:cover;object-position:50% 38%;display:block;margin-bottom:20px;border:3px solid #fff;box-shadow:0 0 0 1px rgba(122,167,255,.5),0 0 22px rgba(31,92,255,.35),0 0 44px rgba(6,198,217,.2)}
+.hero-avatar-fallback{display:none;align-items:center;justify-content:center;background:var(--grad-deep);color:#fff;font-family:'Montserrat';font-weight:800;font-size:2.4rem;letter-spacing:.02em}
 .hero h1{font-size:clamp(2rem,4.3vw,3.1rem);margin-bottom:22px;letter-spacing:-.025em;font-weight:600}
 .hero h1 em{font-style:normal;background:var(--grad-deep);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p.lead{font-size:1.12rem;color:var(--muted);max-width:560px;margin-bottom:34px}
@@ -134,30 +136,8 @@ header.nav{
 .hero-card .row b{font-family:'Montserrat';font-weight:800;font-size:2rem;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero-card .row span{color:var(--muted);font-size:.9rem;max-width:160px;text-align:right}
 
-/* ===== Impact / stats ===== */
-.impact{background:var(--bg-soft)}
-.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:48px}
-.stat{
-  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
-  padding:30px 26px;transition:transform .25s,border-color .25s,box-shadow .25s;box-shadow:var(--shadow-sm);
-  position:relative;overflow:hidden;
-}
-.stat::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--grad);transform:scaleY(0);transform-origin:top;transition:transform .3s}
-.stat:hover{transform:translateY(-6px);border-color:var(--accent-ice);box-shadow:var(--shadow),0 0 0 1px rgba(122,167,255,.45),0 0 26px rgba(31,92,255,.22)}
-.stat:hover::before{transform:scaleY(1)}
-.stat .num{font-family:'Montserrat';font-size:2.6rem;font-weight:800;background:var(--grad-deep);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
-.stat .lbl{margin-top:10px;color:var(--muted);font-size:.95rem}
-
 /* ===== About ===== */
-.about-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:60px;align-items:center;margin-top:20px}
-.about-photo{
-  border-radius:20px;border:1px solid var(--border);overflow:hidden;
-  aspect-ratio:4/5;background:linear-gradient(160deg,#fff,var(--surface-2));
-  display:flex;align-items:center;justify-content:center;position:relative;box-shadow:var(--shadow-lg);
-}
-.about-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(31,92,255,.07),rgba(6,198,217,.05) 60%,transparent);pointer-events:none}
-.about-photo .mono{font-family:'Montserrat';font-size:5rem;font-weight:800;background:var(--grad-deep);-webkit-background-clip:text;background-clip:text;color:transparent}
-.about-photo small{position:absolute;bottom:22px;color:var(--faint);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase}
+.about-grid{max-width:880px;margin-top:20px}
 .about-text p{color:var(--muted);font-size:1.05rem;margin-bottom:18px}
 .about-text p strong{color:var(--ink);font-weight:600}
 .about-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
@@ -179,7 +159,12 @@ header.nav{
 .case-body .kicker{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:16px;display:inline-flex;align-items:center;gap:11px}
 .case-body .kicker .kico{width:38px;height:38px;border-radius:10px;background:rgba(31,120,230,.09);border:1px solid rgba(31,120,230,.2);display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
 .case-body h3{font-size:1.3rem;margin-bottom:14px}
-.case-body p{color:var(--muted);font-size:1rem;margin-bottom:24px;max-width:46ch}
+.case-body p{color:var(--muted);font-size:.97rem;margin-bottom:16px;max-width:50ch}
+.case-body p b{color:var(--ink);font-weight:600}
+.case-scale{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.case-scale span{font-size:.75rem;padding:5px 11px;border-radius:999px;background:rgba(31,120,230,.09);border:1px solid rgba(31,120,230,.2);color:#2b5a9e;font-weight:600}
+.case-decision{margin:0 0 20px;padding:13px 16px;border-left:3px solid var(--cyan);background:rgba(6,198,217,.07);border-radius:0 10px 10px 0;font-size:.92rem;color:var(--text);line-height:1.5}
+.case-decision b{display:block;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:4px}
 .case .metrics{display:flex;gap:32px;flex-wrap:wrap;border-top:1px solid var(--border);padding-top:20px}
 .case .metrics div b{display:block;font-family:'Montserrat';font-weight:800;font-size:1.5rem;background:var(--grad-deep);-webkit-background-clip:text;background-clip:text;color:transparent}
 .case .metrics div span{color:var(--faint);font-size:.8rem}
@@ -204,6 +189,37 @@ header.nav{
 .principle .ico{width:48px;height:48px;border-radius:13px;background:rgba(31,120,230,.09);border:1px solid rgba(31,120,230,.2);display:flex;align-items:center;justify-content:center;font-size:1.35rem;margin-bottom:18px}
 .principle h4{font-size:1.1rem;margin-bottom:10px}
 .principle p{color:var(--muted);font-size:.93rem}
+.principle .proof{margin-top:14px;padding-top:12px;border-top:1px solid var(--border);font-size:.86rem;color:var(--slate);line-height:1.5}
+.principle .proof b{display:block;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:3px}
+
+/* Leadership-at-scale band */
+.lead-band{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.lead-band div{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px;text-align:center;box-shadow:var(--shadow-sm);position:relative;overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s}
+.lead-band div::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--grad);transform:scaleY(0);transform-origin:top;transition:transform .3s}
+.lead-band div:hover{transform:translateY(-6px);border-color:var(--accent-ice);box-shadow:var(--shadow),0 0 0 1px rgba(122,167,255,.45),0 0 26px rgba(31,92,255,.22)}
+.lead-band div:hover::before{transform:scaleY(1)}
+.lead-band b{display:block;font-family:'Montserrat';font-weight:800;font-size:1.8rem;line-height:1;background:var(--grad-deep);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead-band span{display:block;margin-top:8px;font-size:.82rem;color:var(--muted)}
+
+/* Director micro-section */
+.director{margin-top:44px;background:var(--ink);color:#eaf0ff;border-radius:20px;padding:38px 40px;position:relative;overflow:hidden}
+.director::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(31,92,255,.35),transparent 60%);top:-260px;right:-120px;z-index:0}
+.director::after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(6,198,217,.28),transparent 60%);bottom:-220px;left:-100px;z-index:0}
+.director > *{position:relative;z-index:1}
+.director .eyebrow{color:var(--cyan-soft)}
+.director h3{color:#fff;font-size:1.45rem;margin-bottom:8px}
+.director > p{color:#b9c4dd;margin-bottom:22px;max-width:640px}
+.director ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.director li{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:22px 20px;font-size:.92rem;color:#dbe4f5;line-height:1.5;position:relative;overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s}
+.director li::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--grad);transform:scaleY(0);transform-origin:top;transition:transform .3s}
+.director li:hover{transform:translateY(-6px);border-color:var(--accent-ice);background:rgba(255,255,255,.09);box-shadow:0 0 0 1px rgba(122,167,255,.45),0 0 28px rgba(31,92,255,.4),0 0 48px rgba(6,198,217,.18)}
+.director li:hover::before{transform:scaleY(1)}
+.director li .dico{width:40px;height:40px;border-radius:11px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center;font-size:1.1rem;margin-bottom:14px}
+.director li > b{display:block;color:#fff;font-family:'Montserrat';font-weight:700;font-size:1.02rem;margin-bottom:10px;line-height:1.3}
+.director li p{color:#c9d3ea;margin-bottom:14px}
+.director li p strong{color:#fff;font-weight:600}
+.director li .d-proof{padding:10px 13px;border-left:3px solid var(--cyan);background:rgba(6,198,217,.10);border-radius:0 8px 8px 0;font-size:.86rem;color:#dbe4f5;line-height:1.45}
+.director li .d-proof b{display:block;font-family:'Inter';font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan-soft);margin-bottom:3px;font-weight:700}
 
 /* ===== Experience timeline ===== */
 .timeline{margin-top:48px;position:relative;padding-left:30px}
@@ -267,8 +283,9 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
 /* ===== Responsive ===== */
 @media(max-width:900px){
   .hero-inner{grid-template-columns:1fr;gap:40px}
-  .about-grid{grid-template-columns:1fr;gap:36px}
-  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .lead-band{grid-template-columns:repeat(2,1fr)}
+  .director ul{grid-template-columns:1fr}
+  .director{padding:30px 26px}
   .skills-grid,.principles-grid,.two-col{grid-template-columns:1fr}
   .case{grid-template-columns:1fr;gap:30px;padding:30px}
   .case:nth-child(even) .case-visual{order:0}
@@ -284,7 +301,7 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
   .nav-toggle{display:block}
 }
 @media(max-width:560px){
-  .stats-grid{grid-template-columns:1fr}
+  .lead-band{grid-template-columns:1fr}
   section{padding:74px 0}
 }
 </style>
@@ -293,7 +310,7 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
 
 <!-- ===== Banner ===== -->
 <div class="banner">
-  <span class="banner-inner">🚀 <b>Open to Senior / Principal TPM roles</b> · Remote &amp; Hybrid · <a href="#contact">Let’s talk →</a></span>
+  <span class="banner-inner">🚀 <b>Open to Principal / Director TPM roles</b> · Remote &amp; Hybrid · <a href="#contact">Let’s talk →</a></span>
 </div>
 
 <!-- ===== Nav ===== -->
@@ -301,10 +318,9 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
   <div class="container nav-inner">
     <div class="brand">Amruta Pawar<span>.</span></div>
     <nav class="nav-links" id="navLinks">
-      <a href="#impact">Impact</a>
       <a href="#about">About</a>
-      <a href="#work">Case Studies</a>
       <a href="#principles">Principles</a>
+      <a href="#work">Case Studies</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#contact" class="btn">Get in touch</a>
@@ -317,37 +333,23 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
 <section class="hero" id="top">
   <div class="container hero-inner">
     <div class="reveal">
-      <span class="tag"><span class="dot"></span> Senior Technical Program Manager</span>
-      <h1>Hi, I’m Amruta — I turn ambiguous, large-scale technology into <em>shipped outcomes</em>.</h1>
-      <p class="lead">I lead complex cross-functional programs end-to-end — aligning engineering, product, and leadership to deliver platforms, migrations, and 0→1 initiatives on time and at scale.</p>
+      <img class="hero-avatar" src="data:image/jpeg;base64,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" alt="Amruta Pawar" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <div class="hero-avatar hero-avatar-fallback" aria-hidden="true">AP</div>
+      <span class="tag"><span class="dot"></span> Principal Technical Program Manager</span>
+      <h1>I turn ambiguous, large-scale technology into <em>shipped outcomes</em>.</h1>
+      <p class="lead">I lead complex cross-functional programs end-to-end; aligning engineering, product, and leadership to deliver platforms, migrations, and 0→1 initiatives on time and at scale.</p>
       <div class="hero-cta">
         <a href="#work" class="btn">View case studies</a>
-        <a href="#contact" class="btn ghost">Contact me</a>
+        <a href="mailto:amruthaa_pawar@yahoo.com" class="btn ghost">Contact me</a>
       </div>
     </div>
     <div class="hero-card reveal">
       <h4>At a glance</h4>
       <div class="row"><b>16+ yrs</b><span>Leading technical programs &amp; teams</span></div>
-      <div class="row"><b>$270M+</b><span>Program portfolio delivered</span></div>
+      <div class="row"><b>$280M+</b><span>Program portfolio delivered</span></div>
       <div class="row"><b>350+</b><span>Engineers &amp; partners coordinated</span></div>
-      <div class="row"><b>99.9%</b><span>Platform reliability sustained</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Impact at a glance ===== -->
-<section class="impact" id="impact">
-  <div class="container">
-    <div class="reveal">
-      <span class="eyebrow">Impact at a glance</span>
-      <h2 class="section-title">Outcomes that moved the business</h2>
-      <p class="section-sub">A snapshot of the measurable impact delivered across platform, infrastructure, and product programs.</p>
-    </div>
-    <div class="stats-grid">
-      <div class="stat reveal"><div class="num">40%</div><div class="lbl">Faster time-to-market through streamlined delivery pipelines</div></div>
-      <div class="stat reveal"><div class="num">$12M</div><div class="lbl">Annual cost saved via cloud &amp; infra optimization programs</div></div>
-      <div class="stat reveal"><div class="num">30+</div><div class="lbl">Cross-functional programs shipped across 4 business units</div></div>
-      <div class="stat reveal"><div class="num">3×</div><div class="lbl">Increase in release frequency without quality regression</div></div>
+      <div class="row"><b>$14M+</b><span>P&amp;L owned across programs</span></div>
+      <div class="row"><b>$220M+</b><span>Annual GTM pipeline shaped</span></div>
     </div>
   </div>
 </section>
@@ -360,121 +362,45 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
       <h2 class="section-title">Engineering depth, executive clarity</h2>
     </div>
     <div class="about-grid">
-      <div class="about-photo reveal">
-        <span class="mono">AP</span>
-        <small>Senior TPM</small>
-      </div>
       <div class="about-text reveal">
-        <p>I’m a Senior Technical Program Manager who thrives where <strong>technical complexity meets organizational ambiguity</strong>. With an engineering background, I speak fluently with architects and executives alike — translating strategy into executable roadmaps and reporting risk in language each audience trusts.</p>
-        <p>My work spans <strong>platform modernization, cloud migrations, ML/AI enablement, and 0→1 product launches</strong>. I build the operating system around a program: clear scope, the right rituals, transparent metrics, and a culture where teams move fast and stay aligned.</p>
-        <p>Above all, I’m driven by <strong>shipping outcomes that matter</strong> — and by leaving teams stronger than I found them.</p>
+        <p>I’m a <strong>PMP®-certified AI Product &amp; Engineering leader</strong> with 16+ years building agentic AI products end-to-end, driving enterprise AI strategy, and leading global program delivery across Financial Services and Technology.</p>
+        <p>I scaled <strong>enterprise AI adoption from 0 to 90%</strong> across product, engineering, and data science teams through change-management frameworks — lifting delivery velocity by 40%. The agents and analytics products I’ve built cut <strong>70% of manual financial-tracking effort</strong> and saved the equivalent of 20+ FTEs, tuned through SME-ranked evaluation design.</p>
+        <p>Across the portfolio I’ve managed <strong>50+ direct reports, including 10+ technical program managers</strong>, and 300+ stakeholders — from C-suite sponsors and client leadership to vendors and engineering teams across North America, Europe, and APAC. I’ve delivered <strong>$280M+ of enterprise programs, owned $14M+ of P&amp;L, and shaped $220M+ of annual GTM pipeline</strong>, serving as a trusted C-suite advisor on AI readiness, systems engineering, program governance, and value realization.</p>
         <div class="about-pills">
-          <span class="pill">Program Strategy</span>
-          <span class="pill">Cross-functional Leadership</span>
-          <span class="pill">Stakeholder Alignment</span>
-          <span class="pill">Risk &amp; Dependency Management</span>
-          <span class="pill">Agile &amp; Lean Delivery</span>
+          <span class="pill">AI Strategy &amp; Governance</span>
+          <span class="pill">Enterprise Transformation</span>
+          <span class="pill">P&amp;L Ownership</span>
+          <span class="pill">Global Team Leadership</span>
+          <span class="pill">Value Realization</span>
+          <span class="pill">Organizational Change Management</span>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ===== Case studies ===== -->
-<section id="work">
-  <div class="container">
-    <div class="reveal">
-      <span class="eyebrow">Case studies</span>
-      <h2 class="section-title">Selected programs</h2>
-      <p class="section-sub">A closer look at how I frame problems, drive execution, and land measurable results.</p>
-    </div>
-    <div class="cases">
-      <article class="case reveal">
-        <div class="case-body">
-          <div class="kicker"><span class="kico">🏗️</span> Platform Modernization</div>
-          <h3>Monolith → microservices migration</h3>
-          <p>Led a 14-month re-architecture of a core monolith into domain-driven services across 8 teams, with zero customer-facing downtime and a phased cutover strategy.</p>
-          <div class="metrics">
-            <div><b>−55%</b><span>Deploy lead time</span></div>
-            <div><b>8</b><span>Teams aligned</span></div>
-            <div><b>0</b><span>Downtime incidents</span></div>
-          </div>
-        </div>
-        <div class="case-visual">
-          <svg class="viz" viewBox="0 0 140 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M8 22 L42 40 L74 48 L106 60 L132 66 L132 74 L8 74 Z" fill="rgba(255,255,255,.16)"/>
-            <polyline points="8,22 42,40 74,48 106,60 132,66" stroke="#fff"/>
-            <circle cx="8" cy="22" r="3.5" fill="rgba(255,255,255,.65)"/>
-            <circle cx="132" cy="66" r="4.5" fill="#fff"/>
-          </svg>
-          <div class="headline">−55%</div><div class="sub">Deploy lead time</div>
-        </div>
-      </article>
-
-      <article class="case reveal">
-        <div class="case-body">
-          <div class="kicker"><span class="kico">☁️</span> Cloud &amp; Cost</div>
-          <h3>Multi-cloud cost optimization</h3>
-          <p>Drove a FinOps program spanning infrastructure, data, and product orgs — instituting tagging, rightsizing, and commitment strategies tied to clear ownership.</p>
-          <div class="metrics">
-            <div><b>$12M</b><span>Annual savings</span></div>
-            <div><b>22%</b><span>Lower unit cost</span></div>
-            <div><b>4</b><span>Orgs coordinated</span></div>
-          </div>
-        </div>
-        <div class="case-visual">
-          <svg class="viz" viewBox="0 0 140 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <line x1="6" y1="74" x2="134" y2="74" stroke="rgba(255,255,255,.35)" stroke-width="2"/>
-            <rect x="14" y="24" width="22" height="50" rx="3" fill="rgba(255,255,255,.55)"/>
-            <rect x="46" y="36" width="22" height="38" rx="3" fill="rgba(255,255,255,.7)"/>
-            <rect x="78" y="48" width="22" height="26" rx="3" fill="rgba(255,255,255,.82)"/>
-            <rect x="110" y="58" width="22" height="16" rx="3" fill="#fff"/>
-          </svg>
-          <div class="headline">$12M</div><div class="sub">Annual savings</div>
-        </div>
-      </article>
-
-      <article class="case reveal">
-        <div class="case-body">
-          <div class="kicker"><span class="kico">🤖</span> AI / ML Enablement</div>
-          <h3>ML platform 0→1 launch</h3>
-          <p>Stood up an internal ML platform from concept to GA — defining the roadmap, brokering build-vs-buy decisions, and onboarding the first wave of model teams.</p>
-          <div class="metrics">
-            <div><b>6 mo</b><span>Concept → GA</span></div>
-            <div><b>9</b><span>Model teams onboarded</span></div>
-            <div><b>40%</b><span>Faster experimentation</span></div>
-          </div>
-        </div>
-        <div class="case-visual">
-          <svg class="viz" viewBox="0 0 140 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M8 62 L42 50 L74 38 L106 24 L132 14 L132 74 L8 74 Z" fill="rgba(255,255,255,.16)"/>
-            <polyline points="8,62 42,50 74,38 106,24 132,14" stroke="#fff"/>
-            <circle cx="8" cy="62" r="3.5" fill="rgba(255,255,255,.65)"/>
-            <circle cx="132" cy="14" r="4.5" fill="#fff"/>
-          </svg>
-          <div class="headline">0→1</div><div class="sub">ML platform launch</div>
-        </div>
-      </article>
-
-      <article class="case reveal">
-        <div class="case-body">
-          <div class="kicker"><span class="kico">🛡️</span> Reliability</div>
-          <h3>Reliability &amp; incident program</h3>
-          <p>Built an SLO-driven reliability practice with blameless postmortems and an on-call operating model, turning recurring outages into a culture of resilience.</p>
-          <div class="metrics">
-            <div><b>99.9%</b><span>Uptime sustained</span></div>
-            <div><b>−63%</b><span>MTTR reduction</span></div>
-            <div><b>30+</b><span>Services covered</span></div>
-          </div>
-        </div>
-        <div class="case-visual">
-          <svg class="viz" viewBox="0 0 140 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx="70" cy="42" r="28" stroke="rgba(255,255,255,.22)" stroke-width="9"/>
-            <circle cx="70" cy="42" r="28" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-dasharray="174 176" transform="rotate(-90 70 42)"/>
-          </svg>
-          <div class="headline">99.9%</div><div class="sub">Uptime sustained</div>
-        </div>
-      </article>
+    <div class="director reveal">
+      <span class="eyebrow">What I’d bring to a Director role</span>
+      <h3>The org problems I’d solve in year one</h3>
+      <p>Three things a Director TPM is hired to do — each one I’ve already delivered at scale.</p>
+      <ul>
+        <li>
+          <div class="dico">⚙️</div>
+          <b>A delivery engine, not a set of projects</b>
+          <p><strong>Year one:</strong> stand up the governance, planning cadence, and program-health reporting that lets every TPM run to one standard.</p>
+          <div class="d-proof"><b>Proven at scale</b>Built and standardized this operating model across a consulting practice.</div>
+        </li>
+        <li>
+          <div class="dico">🔄</div>
+          <b>AI the organization actually adopts</b>
+          <p><strong>Year one:</strong> run enterprise AI rollout as change management, with delivery velocity as the KPI.</p>
+          <div class="d-proof"><b>Proven at scale</b>Took adoption from 0 to 90% and made delivery 40% faster.</div>
+        </li>
+        <li>
+          <div class="dico">🌱</div>
+          <b>A TPM bench that scales</b>
+          <p><strong>Year one:</strong> hire, develop, and coach TPMs into leaders who multiply the org’s capacity.</p>
+          <div class="d-proof"><b>Proven at scale</b>Lead 10+ TPMs and 50+ direct reports today.</div>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
@@ -484,16 +410,161 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
   <div class="container">
     <div class="reveal">
       <span class="eyebrow">Leadership principles</span>
-      <h2 class="section-title">How I run programs</h2>
-      <p class="section-sub">The operating beliefs that shape how I lead teams and deliver at scale.</p>
+      <h2 class="section-title">How I lead</h2>
+      <p class="section-sub">The beliefs I run an organization on — each backed by what I’ve actually done.</p>
     </div>
+
+    <div class="lead-band reveal">
+      <div><b>50+</b><span>Direct reports</span></div>
+      <div><b>10+</b><span>TPMs led</span></div>
+      <div><b>300+</b><span>Stakeholders, C-suite to vendors</span></div>
+      <div><b>3</b><span>Regions · NA · Europe · APAC</span></div>
+    </div>
+
     <div class="principles-grid">
-      <div class="principle reveal"><div class="ico">🎯</div><h4>Clarity beats control</h4><p>Crisp goals, scope, and ownership outperform heavy process. I optimize for shared understanding, not status theater.</p></div>
-      <div class="principle reveal"><div class="ico">🔍</div><h4>Surface risk early</h4><p>Bad news doesn’t age well. I make dependencies and risks visible while there’s still time to act on them.</p></div>
-      <div class="principle reveal"><div class="ico">🤝</div><h4>Earn trust, then move fast</h4><p>Credibility with engineers and executives is the currency that lets a program move at speed.</p></div>
-      <div class="principle reveal"><div class="ico">📊</div><h4>Decide with data</h4><p>Metrics frame the conversation. I instrument outcomes so decisions are grounded, not anecdotal.</p></div>
-      <div class="principle reveal"><div class="ico">🧭</div><h4>Bias for outcomes</h4><p>Shipping value beats shipping activity. Every ritual must earn its place by moving the result.</p></div>
-      <div class="principle reveal"><div class="ico">🌱</div><h4>Grow the team</h4><p>Programs end; people stay. I leave teams more capable, aligned, and confident than I found them.</p></div>
+      <div class="principle reveal"><div class="ico">⚙️</div><h4>Build the operating system, not just the program</h4><p>Programs end; the way an organization delivers persists. I invest in the standards and cadences that outlast any single engagement.</p><div class="proof"><b>Which is why I</b>Standardized steering governance and executive cadences across the entire practice.</div></div>
+      <div class="principle reveal"><div class="ico">🌱</div><h4>Multiply through people</h4><p>My leverage is the leaders I develop. A team that’s more capable than when I found it is the real deliverable.</p><div class="proof"><b>Which is why I</b>Lead 10+ TPMs and 50+ direct reports — and coached a global team from 68% to 96% release success.</div></div>
+      <div class="principle reveal"><div class="ico">💹</div><h4>Own the number</h4><p>I’m accountable to the business outcome, not to the plan. If the P&amp;L or pipeline moves, that’s the scorecard.</p><div class="proof"><b>Which is why I</b>Own $14M+ of P&amp;L and shaped $220M+ of annual GTM pipeline.</div></div>
+      <div class="principle reveal"><div class="ico">🔄</div><h4>Change management is the product</h4><p>Technology only wins if the organization adopts it. Rollout is a behavioral problem before it’s a technical one.</p><div class="proof"><b>Which is why I</b>Scaled enterprise AI adoption from 0 to 90% and lifted delivery velocity 40%.</div></div>
+      <div class="principle reveal"><div class="ico">🧭</div><h4>Advise upward, decide downward</h4><p>Executives need honest trade-offs, not status theater; teams need clear decisions they can move on today.</p><div class="proof"><b>Which is why I</b>Serve as C-suite advisor on AI readiness, risk, and build-vs-buy — then set the delivery standards the group runs on.</div></div>
+      <div class="principle reveal"><div class="ico">🚀</div><h4>Ship 0→1, then scale</h4><p>Prove it small with real users and rigorous evaluation, then turn it into a platform others can build on.</p><div class="proof"><b>Which is why I</b>Built the Account Margin agent from zero and scaled a live analytics dashboard across multiple client teams.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Case studies ===== -->
+<section id="work">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">Case studies</span>
+      <h2 class="section-title">Decisions that moved the P&amp;L</h2>
+      <p class="section-sub">Real programs, told as Situation → Premise → System I built → Outcome — with the hard call each one came down to.</p>
+    </div>
+    <div class="cases">
+
+      <!-- 1. AI adoption -->
+      <article class="case reveal">
+        <div class="case-body">
+          <div class="kicker"><span class="kico">🚀</span> Enterprise AI Transformation</div>
+          <h3>Scaling AI adoption from 0 to 90% across an enterprise</h3>
+          <div class="case-scale"><span>Product · Eng · Data Science</span><span>Practice-wide</span><span>Copilot + Claude Code</span></div>
+          <p><b>Situation:</b> AI tooling was available but unused — adoption near zero, no shared standards. <b>Premise:</b> the constraint was organizational, not technical. <b>System:</b> a change-management framework — role-based playbooks, champions, and measured rollout waves across product, engineering, and data science.</p>
+          <div class="case-decision"><b>The trade-off I made</b>Treated adoption as the product and delivery velocity as its KPI — resisting a tool-first rollout in favor of team-by-team behavioral change.</div>
+          <div class="metrics">
+            <div><b>0→90%</b><span>Adoption</span></div>
+            <div><b>40%</b><span>Faster delivery</span></div>
+            <div><b>3</b><span>Functions aligned</span></div>
+          </div>
+        </div>
+        <div class="case-visual">
+          <svg class="viz" viewBox="0 0 140 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M8 66 L42 58 L74 40 L106 20 L132 12 L132 74 L8 74 Z" fill="rgba(255,255,255,.16)"/>
+            <polyline points="8,66 42,58 74,40 106,20 132,12" stroke="#fff"/>
+            <circle cx="8" cy="66" r="3.5" fill="rgba(255,255,255,.65)"/>
+            <circle cx="132" cy="12" r="4.5" fill="#fff"/>
+          </svg>
+          <div class="headline">0→90%</div><div class="sub">AI adoption</div>
+        </div>
+      </article>
+
+      <!-- 2. $60M transformation -->
+      <article class="case reveal">
+        <div class="case-body">
+          <div class="kicker"><span class="kico">🏦</span> AI Strategy &amp; Governance</div>
+          <h3>$60M+ platform transformation at a $50T custodian bank</h3>
+          <div class="case-scale"><span>$60M+ program</span><span>$3M+ P&amp;L</span><span>50,000+ securities</span><span>C-suite sponsors</span></div>
+          <p><b>Situation:</b> Security Master reconciliation ran on manual, multi-source matching at massive scale. <b>Premise:</b> AI could automate ingestion and matching only if governance and value realization were designed in from day one. <b>System:</b> the AI adoption strategy, governance frameworks, and value-realization roadmap — plus steering governance and executive cadences now standard across the practice.</p>
+          <div class="case-decision"><b>The trade-off I made</b>Advised the C-suite on build-vs-buy and product-vs-technology trade-offs — standardizing the executive governance model rather than running it as a one-off.</div>
+          <div class="metrics">
+            <div><b>$60M+</b><span>Program</span></div>
+            <div><b>$3M+</b><span>P&amp;L owned</span></div>
+            <div><b>$50T+</b><span>Client AuC/A</span></div>
+          </div>
+        </div>
+        <div class="case-visual">
+          <svg class="viz" viewBox="0 0 140 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <line x1="6" y1="74" x2="134" y2="74" stroke="rgba(255,255,255,.35)" stroke-width="2"/>
+            <rect x="14" y="52" width="22" height="22" rx="3" fill="rgba(255,255,255,.5)"/>
+            <rect x="46" y="42" width="22" height="32" rx="3" fill="rgba(255,255,255,.65)"/>
+            <rect x="78" y="30" width="22" height="44" rx="3" fill="rgba(255,255,255,.82)"/>
+            <rect x="110" y="16" width="22" height="58" rx="3" fill="#fff"/>
+          </svg>
+          <div class="headline">$60M+</div><div class="sub">Platform transformation</div>
+        </div>
+      </article>
+
+      <!-- 3. Margin agent -->
+      <article class="case reveal">
+        <div class="case-body">
+          <div class="kicker"><span class="kico">🤖</span> 0→1 Product Ownership</div>
+          <h3>Account Margin agent — from nothing to leadership’s daily signal</h3>
+          <div class="case-scale"><span>0→1 product</span><span>Agentic AI</span><span>SME-ranked evaluation</span></div>
+          <p><b>Situation:</b> Leadership tracked margin against forecast through recurring manual analysis. <b>Premise:</b> an agent could read live margin data, spot drift, and surface course-correction guidance — if its judgment could be trusted. <b>System:</b> end-to-end product ownership with a prompt library and evaluation criteria tuned through formal SME review.</p>
+          <div class="case-decision"><b>The trade-off I made</b>Made SME-ranked evaluation a gate for release, not a nice-to-have — trading launch speed for output leadership would actually act on.</div>
+          <div class="metrics">
+            <div><b>−70%</b><span>Manual effort</span></div>
+            <div><b>0→1</b><span>Product built</span></div>
+            <div><b>Live</b><span>Margin vs. forecast</span></div>
+          </div>
+        </div>
+        <div class="case-visual">
+          <svg class="viz" viewBox="0 0 140 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M8 18 L42 30 L74 44 L106 58 L132 66 L132 74 L8 74 Z" fill="rgba(255,255,255,.16)"/>
+            <polyline points="8,18 42,30 74,44 106,58 132,66" stroke="#fff"/>
+            <circle cx="8" cy="18" r="3.5" fill="rgba(255,255,255,.65)"/>
+            <circle cx="132" cy="66" r="4.5" fill="#fff"/>
+          </svg>
+          <div class="headline">−70%</div><div class="sub">Manual effort</div>
+        </div>
+      </article>
+
+      <!-- 4. GTM pipeline -->
+      <article class="case reveal">
+        <div class="case-body">
+          <div class="kicker"><span class="kico">📈</span> Commercial Leadership</div>
+          <h3>Shaping a $220M+ GTM pipeline</h3>
+          <div class="case-scale"><span>$220M+ pipeline</span><span>Multi-geo</span><span>Concurrent workstreams</span><span>200+ practitioners</span></div>
+          <p><b>Situation:</b> Large AI product-transformation mandates were being competed across geographies. <b>Premise:</b> pursuit wins come from delivery credibility, so proposals should be built on the same frameworks that run the programs. <b>System:</b> pursuit strategy and proposal design anchored on scalable AI frameworks proven across a $110M+ global delivery program.</p>
+          <div class="case-decision"><b>The trade-off I made</b>Put tuned evaluation criteria and release reliability at the center of the pitch — selling the operating model, not the demo.</div>
+          <div class="metrics">
+            <div><b>$220M+</b><span>Pipeline shaped</span></div>
+            <div><b>$110M+</b><span>Delivery program</span></div>
+            <div><b>$5M+</b><span>P&amp;L owned</span></div>
+          </div>
+        </div>
+        <div class="case-visual">
+          <svg class="viz" viewBox="0 0 140 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M8 60 L42 54 L74 44 L106 28 L132 16 L132 74 L8 74 Z" fill="rgba(255,255,255,.16)"/>
+            <polyline points="8,60 42,54 74,44 106,28 132,16" stroke="#fff"/>
+            <circle cx="8" cy="60" r="3.5" fill="rgba(255,255,255,.65)"/>
+            <circle cx="132" cy="16" r="4.5" fill="#fff"/>
+          </svg>
+          <div class="headline">$220M+</div><div class="sub">GTM pipeline</div>
+        </div>
+      </article>
+
+      <!-- 5. Release turnaround -->
+      <article class="case reveal">
+        <div class="case-body">
+          <div class="kicker"><span class="kico">🔧</span> Turnaround</div>
+          <h3>68% → 96% release success in six months</h3>
+          <div class="case-scale"><span>60+ pre-prod environments</span><span>Global team</span><span>6-month turnaround</span></div>
+          <p><b>Situation:</b> Inherited a global engineering team running 60+ pre-prod environments with a 68% release success rate. <b>Premise:</b> the failures were systemic — availability and recovery, not individual mistakes. <b>System:</b> high-availability and failure-recovery practices, paired with hands-on mentoring and coaching of the team.</p>
+          <div class="case-decision"><b>The trade-off I made</b>Spent the first weeks fixing recovery paths and coaching the team instead of adding release gates — treating people and resilience as the fix.</div>
+          <div class="metrics">
+            <div><b>96%</b><span>Release success</span></div>
+            <div><b>+28 pts</b><span>In 6 months</span></div>
+            <div><b>60+</b><span>Environments</span></div>
+          </div>
+        </div>
+        <div class="case-visual">
+          <svg class="viz" viewBox="0 0 140 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="70" cy="42" r="28" stroke="rgba(255,255,255,.22)" stroke-width="9"/>
+            <circle cx="70" cy="42" r="28" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-dasharray="169 176" transform="rotate(-90 70 42)"/>
+          </svg>
+          <div class="headline">96%</div><div class="sub">Release success</div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -507,33 +578,55 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
     </div>
     <div class="timeline">
       <div class="tl-item reveal">
-        <div class="when">2021 — Present</div>
-        <h3>Senior Technical Program Manager</h3>
-        <div class="org">Global Technology Company · Platform &amp; Infrastructure</div>
+        <div class="when">2025 — Present</div>
+        <h3>Principal Technical Program Manager</h3>
+        <div class="org">Deloitte Consulting · Chicago, US</div>
         <ul>
-          <li>Own a $40M+ portfolio of platform programs across 8 engineering teams and 150+ contributors.</li>
-          <li>Led microservices migration and FinOps initiatives delivering $12M in annual savings.</li>
-          <li>Established SLO-driven reliability practice, sustaining 99.9% uptime across 30+ services.</li>
+          <li>Lead AI strategy, governance, and value realization for a $60M+ transformation ($3M+ P&amp;L) at a $50T+ custodian bank — automating reconciliation for 50,000+ securities.</li>
+          <li>C-suite advisor on AI readiness, risk, and build-vs-buy; made steering governance and executive cadences a practice-wide standard.</li>
+          <li>Lead 10+ TPMs across concurrent engagements — own the delivery standards and program-health reporting the group runs on.</li>
+          <li>Built an Account Margin agent 0→1, cutting 70% of recurring manual effort via SME-tuned evaluation.</li>
+          <li>Scaled enterprise AI adoption 0→90% on Copilot and Claude Code — 40% faster delivery.</li>
         </ul>
       </div>
       <div class="tl-item reveal">
-        <div class="when">2017 — 2021</div>
+        <div class="when">2023 — 2025</div>
+        <h3>Staff Technical Program Manager</h3>
+        <div class="org">Deloitte Consulting · Chicago, US</div>
+        <ul>
+          <li>Built scalable AI frameworks on a $110M+ global program ($5M+ P&amp;L), leading 200+ practitioners across product, engineering, and data.</li>
+          <li>Shaped GTM strategy and proposals for a $220M+ pipeline, winning multi-geo AI transformation mandates.</li>
+          <li>Scaled a live analytics dashboard across client teams, automating extraction and validation — 20+ FTEs saved.</li>
+        </ul>
+      </div>
+      <div class="tl-item reveal">
+        <div class="when">2021 — 2023</div>
+        <h3>Lead Technical Program Manager</h3>
+        <div class="org">Deloitte Consulting · Chicago, US</div>
+        <ul>
+          <li>Delivered a first-of-its-kind Front-to-Back solution ($70M+ program, $4M+ P&amp;L) for a $6T+ AuM global asset manager.</li>
+          <li>Ran multi-vendor teams across geographies for a 3-phase Fixed Income delivery spanning 10,000+ securities.</li>
+          <li>Key client liaison aligning Front/Middle-office experts with global implementation leadership.</li>
+        </ul>
+      </div>
+      <div class="tl-item reveal">
+        <div class="when">2019 — 2021</div>
         <h3>Technical Program Manager</h3>
-        <div class="org">Enterprise SaaS · Product Engineering</div>
+        <div class="org">Cognizant · Chicago, US</div>
         <ul>
-          <li>Drove 0→1 launch of an internal ML platform, onboarding 9 model teams in six months.</li>
-          <li>Scaled agile delivery across product orgs, tripling release frequency with no quality loss.</li>
-          <li>Built program dashboards adopted org-wide as the source of truth for delivery health.</li>
+          <li>Steered a $40M+ acquisition-integration program ($2M+ P&amp;L), establishing the client as a Top 10 Asset Servicing provider in a $400B+ AuM market.</li>
+          <li>Managed 15+ Agile workstreams across 6 geographies, helping the client add nearly 100 new clients.</li>
         </ul>
       </div>
       <div class="tl-item reveal">
-        <div class="when">2013 — 2017</div>
-        <h3>Program / Project Manager</h3>
-        <div class="org">Technology Consulting · Delivery</div>
+        <div class="when">2010 — 2019</div>
+        <h3>Tech Lead · Lead Automation Architect · Performance Engineer</h3>
+        <div class="org">Cognizant · Progressive roles</div>
         <ul>
-          <li>Delivered cross-functional client programs spanning cloud, data, and application teams.</li>
-          <li>Introduced dependency and risk management practices that cut slipped milestones by 45%.</li>
-          <li>Grew from project delivery into technical program leadership and stakeholder management.</li>
+          <li>Led global engineering teams building web and API automation for a cloud account-acquisition platform ($10M+ projected YoY growth).</li>
+          <li>Held sign-off authority for a launch impacting 70,000+ customers annually, coordinating 3 major Credit Reporting Agencies.</li>
+          <li>Coached a global team across 60+ pre-prod environments — release success 68% → 96% in 6 months.</li>
+          <li>Performance, stress, and JVM testing for low-latency Options Exchange trade engines.</li>
         </ul>
       </div>
     </div>
@@ -549,45 +642,48 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
     </div>
     <div class="skills-grid">
       <div class="skillcard reveal">
-        <h4><span class="ico">🧩</span> Program Leadership</h4>
+        <h4><span class="ico">🧠</span> AI Strategy &amp; Product</h4>
         <div class="tags">
-          <span>Program Strategy</span><span>Roadmapping</span><span>Risk Management</span>
-          <span>Dependency Mapping</span><span>Stakeholder Alignment</span><span>OKRs</span><span>Governance</span>
+          <span>Enterprise AI Adoption</span><span>AI Governance &amp; Risk Frameworks</span>
+          <span>Product Roadmapping</span><span>Lifecycle Ownership</span><span>Build vs. Buy</span>
         </div>
       </div>
       <div class="skillcard reveal">
-        <h4><span class="ico">⚙️</span> Delivery &amp; Process</h4>
+        <h4><span class="ico">🤖</span> AI Engineering</h4>
         <div class="tags">
-          <span>Agile / Scrum</span><span>Kanban</span><span>Lean</span><span>SAFe</span>
-          <span>Release Management</span><span>FinOps</span><span>Change Management</span>
+          <span>Claude Code</span><span>Microsoft Copilot</span><span>Agent Design &amp; Frameworks</span>
+          <span>Agent Evaluation Design</span><span>Human-in-the-Loop Feedback</span><span>RAG</span>
+          <span>Prompt Engineering</span><span>Live Analytics Dashboards</span>
         </div>
       </div>
       <div class="skillcard reveal">
-        <h4><span class="ico">💻</span> Technical Fluency</h4>
+        <h4><span class="ico">💻</span> Programming &amp; Cloud</h4>
         <div class="tags">
-          <span>Cloud (AWS/GCP/Azure)</span><span>Microservices</span><span>CI/CD</span>
-          <span>Kubernetes</span><span>Data &amp; ML Platforms</span><span>APIs</span><span>Observability</span>
+          <span>Python</span><span>Java</span><span>SQL</span><span>Unix Shell</span><span>REST APIs</span>
+          <span>AWS</span><span>GitHub</span><span>Systems Engineering</span><span>Performance Engineering</span>
+          <span>High Availability &amp; Failure Recovery</span>
         </div>
       </div>
       <div class="skillcard reveal">
-        <h4><span class="ico">🛠️</span> Tools</h4>
+        <h4><span class="ico">🏛️</span> Program Governance</h4>
         <div class="tags">
-          <span>Jira</span><span>Confluence</span><span>Asana</span><span>Linear</span>
-          <span>Looker</span><span>Tableau</span><span>Slack</span><span>Miro</span>
+          <span>PMO Standards</span><span>Program Health Reporting</span><span>Lean Portfolio Management</span>
+          <span>PI Planning &amp; Agile Release Trains</span><span>SAFe Agile</span><span>JIRA</span><span>Confluence</span>
         </div>
       </div>
       <div class="skillcard reveal">
-        <h4><span class="ico">🗣️</span> Leadership</h4>
+        <h4><span class="ico">🔄</span> Transformation &amp; Value</h4>
         <div class="tags">
-          <span>Executive Comms</span><span>Cross-functional Influence</span>
-          <span>Mentorship</span><span>Conflict Resolution</span><span>Negotiation</span>
+          <span>Enterprise Transformation</span><span>Value Engineering &amp; Benefits Realization</span>
+          <span>Organizational Change Management</span><span>Current → Future-State Mapping</span>
+          <span>Process Design &amp; Systems Thinking</span>
         </div>
       </div>
       <div class="skillcard reveal">
-        <h4><span class="ico">📈</span> Analytics</h4>
+        <h4><span class="ico">🤝</span> Leadership &amp; Teaming</h4>
         <div class="tags">
-          <span>Delivery Metrics</span><span>Forecasting</span><span>Capacity Planning</span>
-          <span>SLO/SLI Design</span><span>Reporting</span>
+          <span>Global Team Leadership</span><span>Hiring &amp; Onboarding</span><span>Performance Management</span>
+          <span>Career Coaching &amp; Mentoring</span><span>TPM Development</span><span>Resource &amp; Demand Management</span>
         </div>
       </div>
     </div>
@@ -605,15 +701,14 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
       <div class="list-card reveal">
         <h3>🏅 Certifications</h3>
         <div class="list-item"><div class="badge">📜</div><div class="info"><b>Project Management Professional (PMP)</b><span>Project Management Institute</span></div></div>
-        <div class="list-item"><div class="badge">🌀</div><div class="info"><b>Certified ScrumMaster (CSM)</b><span>Scrum Alliance</span></div></div>
-        <div class="list-item"><div class="badge">📐</div><div class="info"><b>SAFe Program Consultant (SPC)</b><span>Scaled Agile, Inc.</span></div></div>
+        <div class="list-item"><div class="badge">🌀</div><div class="info"><b>SAFe Scrum Master</b><span>Scrum Alliance</span></div></div>
+        <div class="list-item"><div class="badge">📐</div><div class="info"><b>SAFe Agilist</b><span>Scaled Agile, Inc.</span></div></div>
         <div class="list-item"><div class="badge">☁️</div><div class="info"><b>AWS Certified Cloud Practitioner</b><span>Amazon Web Services</span></div></div>
       </div>
       <div class="list-card reveal">
         <h3>🎓 Education</h3>
-        <div class="list-item"><div class="badge">🎓</div><div class="info"><b>M.S. in Information Systems / Management</b><span>University · Graduate Studies</span></div></div>
-        <div class="list-item"><div class="badge">🎓</div><div class="info"><b>B.E. in Computer Science &amp; Engineering</b><span>University · Undergraduate</span></div></div>
-        <div class="list-item"><div class="badge">📚</div><div class="info"><b>Executive Program in Technology Leadership</b><span>Continuing Education</span></div></div>
+        <div class="list-item"><div class="badge">🎓</div><div class="info"><b>Bachelor of Engineering, Computer Engineering</b><span>University of Pune</span></div></div>
+        <div class="list-item"><div class="badge">🌍</div><div class="info"><b>Principles of ESG &amp; Sustainability for Business</b><span>Arizona State University</span></div></div>
       </div>
     </div>
   </div>
@@ -626,19 +721,19 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
     <h2>Let’s build something that ships.</h2>
     <p>Whether you’re scaling a platform, untangling a complex program, or launching something new — I’d love to hear about it.</p>
     <div class="contact-actions">
-      <a href="mailto:amruthaapawar@gmail.com" class="btn">✉️ Email me</a>
+      <a href="mailto:amruthaa_pawar@yahoo.com" class="btn">✉️ Email me</a>
       <a href="#" class="btn ghost">📄 Download résumé</a>
     </div>
     <div class="socials">
-      <a href="mailto:amruthaapawar@gmail.com" title="Email">✉</a>
-      <a href="https://www.linkedin.com" target="_blank" rel="noopener" title="LinkedIn">in</a>
-      <a href="https://github.com" target="_blank" rel="noopener" title="GitHub">GH</a>
+      <a href="mailto:amruthaa_pawar@yahoo.com" title="Email">✉</a>
+      <a href="https://www.linkedin.com/in/amruthaapawar" target="_blank" rel="noopener" title="LinkedIn">in</a>
+      <a href="https://github.com/AmruthaaPawar" target="_blank" rel="noopener" title="GitHub">GH</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="container">© <span id="yr"></span> Amruta Pawar · Senior Technical Program Manager · Built with care, deployed on GitHub Pages.</div>
+  <div class="container">© <span id="yr"></span> Amruta Pawar · Principal Technical Program Manager · Built with care, deployed on GitHub Pages.</div>
 </footer>
 
 <script>
