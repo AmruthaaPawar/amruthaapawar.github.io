@@ -181,25 +181,26 @@ header.nav{
 
 /* ===== Leadership principles ===== */
 .principles{background:var(--bg-soft)}
-.principles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
-.principle{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s,border-color .25s;position:relative;overflow:hidden}
+.principles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.principle{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:15px 18px;box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s,border-color .25s;position:relative;overflow:hidden}
 .principle::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--grad);transform:scaleY(0);transform-origin:top;transition:transform .3s}
 .principle:hover{transform:translateY(-5px);border-color:var(--accent-ice);box-shadow:var(--shadow),0 0 0 1px rgba(122,167,255,.45),0 0 26px rgba(31,92,255,.22)}
 .principle:hover::before{transform:scaleY(1)}
-.principle .ico{width:48px;height:48px;border-radius:13px;background:rgba(31,120,230,.09);border:1px solid rgba(31,120,230,.2);display:flex;align-items:center;justify-content:center;font-size:1.35rem;margin-bottom:18px}
-.principle h4{font-size:1.1rem;margin-bottom:10px}
-.principle p{color:var(--muted);font-size:.93rem}
-.principle .proof{margin-top:14px;padding-top:12px;border-top:1px solid var(--border);font-size:.86rem;color:var(--slate);line-height:1.5}
+.principle .ico{width:36px;height:36px;flex:none;border-radius:10px;background:rgba(31,120,230,.09);border:1px solid rgba(31,120,230,.2);display:flex;align-items:center;justify-content:center;font-size:1.05rem}
+.principle .ph{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.principle h4{font-size:.98rem;margin:0;line-height:1.25}
+.principle p{color:var(--muted);font-size:.86rem;line-height:1.45}
+.principle .proof{margin-top:8px;padding-top:7px;border-top:1px solid var(--border);font-size:.82rem;color:var(--slate);line-height:1.45}
 .principle .proof b{display:block;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:3px}
 
 /* Leadership-at-scale band */
-.lead-band{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
-.lead-band div{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px;text-align:center;box-shadow:var(--shadow-sm);position:relative;overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s}
+.lead-band{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+.lead-band div{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:14px 16px;text-align:center;box-shadow:var(--shadow-sm);position:relative;overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s}
 .lead-band div::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--grad);transform:scaleY(0);transform-origin:top;transition:transform .3s}
 .lead-band div:hover{transform:translateY(-6px);border-color:var(--accent-ice);box-shadow:var(--shadow),0 0 0 1px rgba(122,167,255,.45),0 0 26px rgba(31,92,255,.22)}
 .lead-band div:hover::before{transform:scaleY(1)}
-.lead-band b{display:block;font-family:'Montserrat';font-weight:800;font-size:1.8rem;line-height:1;background:var(--grad-deep);-webkit-background-clip:text;background-clip:text;color:transparent}
-.lead-band span{display:block;margin-top:8px;font-size:.82rem;color:var(--muted)}
+.lead-band b{display:block;font-family:'Montserrat';font-weight:800;font-size:1.6rem;line-height:1;background:var(--grad-deep);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead-band span{display:block;margin-top:6px;font-size:.8rem;color:var(--muted)}
 
 /* Director micro-section */
 .director{margin-top:36px;background:var(--ink);color:#eaf0ff;border-radius:20px;padding:38px 40px;position:relative;overflow:hidden}
@@ -222,17 +223,24 @@ header.nav{
 .director li .d-proof b{display:block;font-family:'Inter';font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan-soft);margin-bottom:3px;font-weight:700}
 
 /* ===== Experience timeline ===== */
-.timeline{margin-top:32px;position:relative;padding-left:30px}
-.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--accent),var(--cyan))}
-.tl-item{position:relative;padding:0 0 22px 34px}
-.tl-item:last-child{padding-bottom:0}
-.tl-item::before{content:"";position:absolute;left:-30px;top:4px;width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid var(--accent);box-shadow:0 0 0 4px rgba(31,92,255,.12)}
-.tl-item .when{font-size:.8rem;color:var(--accent);font-weight:700;letter-spacing:.04em}
-.tl-item h3{font-size:1.15rem;margin:4px 0 2px}
-.tl-item .org{color:var(--muted);font-size:.9rem;margin-bottom:8px}
-.tl-item ul{list-style:none;display:grid;gap:5px}
-.tl-item li{color:var(--muted);font-size:.9rem;line-height:1.5;padding-left:20px;position:relative}
-.tl-item li::before{content:"▹";position:absolute;left:0;color:var(--cyan)}
+.xp{display:grid;grid-template-columns:330px 1fr;gap:28px;margin-top:28px;align-items:start}
+.xp-tabs{display:flex;flex-direction:column;gap:4px;border-left:2px solid var(--border)}
+.xp-tab{text-align:left;background:none;border:0;border-left:2px solid transparent;margin-left:-2px;padding:11px 16px;cursor:pointer;border-radius:0 12px 12px 0;font-family:inherit;color:var(--muted);transition:background .2s,border-color .2s,color .2s}
+.xp-tab .when{display:block;font-size:.72rem;color:var(--accent);font-weight:700;letter-spacing:.06em}
+.xp-tab b{display:block;font-family:'Montserrat';font-weight:700;font-size:.93rem;color:var(--ink);margin:3px 0 1px;line-height:1.25}
+.xp-tab .org{display:block;font-size:.8rem}
+.xp-tab:hover{background:rgba(31,120,230,.06)}
+.xp-tab.is-active{border-left-color:var(--accent);background:rgba(31,120,230,.09);box-shadow:0 0 18px rgba(31,92,255,.12)}
+.xp-panel{display:none;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:22px 26px;box-shadow:var(--shadow-sm);position:relative;overflow:hidden}
+.xp-panel::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--grad)}
+.xp-panel.is-active{display:block;animation:xpIn .35s ease}
+@keyframes xpIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.xp-panel .when{font-size:.74rem;color:var(--accent);font-weight:700;letter-spacing:.06em}
+.xp-panel h3{font-size:1.15rem;margin:4px 0 2px}
+.xp-panel .org{color:var(--muted);font-size:.9rem;margin-bottom:12px}
+.xp-panel ul{list-style:none;display:grid;gap:7px}
+.xp-panel li{color:var(--muted);font-size:.92rem;line-height:1.5;padding-left:20px;position:relative}
+.xp-panel li::before{content:"▹";position:absolute;left:0;color:var(--cyan)}
 
 /* ===== Skills ===== */
 .skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
@@ -287,6 +295,10 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
   .director ul{grid-template-columns:1fr}
   .director{padding:30px 26px}
   .principles-grid,.two-col{grid-template-columns:1fr}
+  .xp{grid-template-columns:1fr}
+  .xp-tabs{flex-direction:row;overflow-x:auto;border-left:0;border-bottom:2px solid var(--border);gap:0}
+  .xp-tab{flex:none;border-left:0;border-bottom:2px solid transparent;margin:0 0 -2px;border-radius:12px 12px 0 0}
+  .xp-tab.is-active{border-bottom-color:var(--accent)}
   .skills-grid{grid-template-columns:1fr}
   .tags span{white-space:normal}
   .case{grid-template-columns:1fr;gap:30px;padding:30px}
@@ -423,12 +435,12 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
     </div>
 
     <div class="principles-grid">
-      <div class="principle reveal"><div class="ico">⚙️</div><h4>Build the operating system, not the project</h4><p>Programs end. The way an organization delivers persists.</p><div class="proof"><b>Which is why I</b>Standardized steering governance and cadences across the entire practice.</div></div>
-      <div class="principle reveal"><div class="ico">🌱</div><h4>Multiply through people</h4><p>The real deliverable is a team more capable than when I found it.</p><div class="proof"><b>Which is why I</b>Lead 20+ direct reports and 10+ TPMs. Coached a team from 68% to 96% release success.</div></div>
-      <div class="principle reveal"><div class="ico">💹</div><h4>Own the number</h4><p>Accountable to the business outcome, not the plan.</p><div class="proof"><b>Which is why I</b>Own $14M+ of P&amp;L and shaped $220M+ of GTM pipeline.</div></div>
-      <div class="principle reveal"><div class="ico">🔄</div><h4>Change management is the product</h4><p>Rollout is a behavioral problem before it is a technical one.</p><div class="proof"><b>Which is why I</b>Took AI adoption from 0 to 90% and delivery velocity up 40%.</div></div>
-      <div class="principle reveal"><div class="ico">🧭</div><h4>Advise upward, decide downward</h4><p>Executives get honest trade-offs. Teams get decisions they can act on today.</p><div class="proof"><b>Which is why I</b>Advise the C-suite on AI readiness and build vs. buy, then set the delivery standards.</div></div>
-      <div class="principle reveal"><div class="ico">🚀</div><h4>Ship 0→1, then scale</h4><p>Prove it with real users and rigorous evaluation, then make it a platform.</p><div class="proof"><b>Which is why I</b>Built the Account Margin agent from zero. Scaled one dashboard across multiple client teams, saving 20+ FTEs.</div></div>
+      <div class="principle reveal"><div class="ph"><div class="ico">⚙️</div><h4>Build the operating system, not the project</h4></div><p>Programs end. The way an organization delivers persists.</p><div class="proof"><b>Which is why I</b>Standardized steering governance and cadences across the entire practice.</div></div>
+      <div class="principle reveal"><div class="ph"><div class="ico">🌱</div><h4>Multiply through people</h4></div><p>The real deliverable is a team more capable than when I found it.</p><div class="proof"><b>Which is why I</b>Lead 20+ direct reports and 10+ TPMs. Coached a team from 68% to 96% release success.</div></div>
+      <div class="principle reveal"><div class="ph"><div class="ico">💹</div><h4>Own the number</h4></div><p>Accountable to the business outcome, not the plan.</p><div class="proof"><b>Which is why I</b>Own $14M+ of P&amp;L and shaped $220M+ of GTM pipeline.</div></div>
+      <div class="principle reveal"><div class="ph"><div class="ico">🔄</div><h4>Change management is the product</h4></div><p>Rollout is a behavioral problem before it is a technical one.</p><div class="proof"><b>Which is why I</b>Took AI adoption from 0 to 90% and delivery velocity up 40%.</div></div>
+      <div class="principle reveal"><div class="ph"><div class="ico">🧭</div><h4>Advise upward, decide downward</h4></div><p>Executives get honest trade-offs. Teams get decisions they can act on today.</p><div class="proof"><b>Which is why I</b>Advise the C-suite on AI readiness and build vs. buy, then set the delivery standards.</div></div>
+      <div class="principle reveal"><div class="ph"><div class="ico">🚀</div><h4>Ship 0→1, then scale</h4></div><p>Prove it with real users and rigorous evaluation, then make it a platform.</p><div class="proof"><b>Which is why I</b>Built the Account Margin agent from zero. Scaled one dashboard across multiple client teams, saving 20+ FTEs.</div></div>
     </div>
   </div>
 </section>
@@ -577,12 +589,20 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
       <span class="eyebrow">Experience</span>
       <h2 class="section-title">Where I’ve made an impact</h2>
     </div>
-    <div class="timeline">
-      <div class="tl-item reveal">
-        <div class="when">2025 – Present</div>
-        <h3>Principal Technical Program Manager (Director Level)</h3>
-        <div class="org">Deloitte Consulting · Chicago, US</div>
-        <ul>
+    <div class="xp reveal">
+      <div class="xp-tabs" role="tablist" aria-label="Roles">
+        <button class="xp-tab is-active" role="tab" aria-selected="true" aria-controls="xp0" id="xptab0"><span class="when">2025 – Present</span><b>Principal Technical Program Manager (Director Level)</b><span class="org">Deloitte Consulting</span></button>
+        <button class="xp-tab" role="tab" aria-selected="false" aria-controls="xp1" id="xptab1"><span class="when">2023 – 2025</span><b>Staff Technical Program Manager</b><span class="org">Deloitte Consulting</span></button>
+        <button class="xp-tab" role="tab" aria-selected="false" aria-controls="xp2" id="xptab2"><span class="when">2021 – 2023</span><b>Lead Technical Program Manager</b><span class="org">Deloitte Consulting</span></button>
+        <button class="xp-tab" role="tab" aria-selected="false" aria-controls="xp3" id="xptab3"><span class="when">2019 – 2021</span><b>Technical Program Manager</b><span class="org">Cognizant</span></button>
+        <button class="xp-tab" role="tab" aria-selected="false" aria-controls="xp4" id="xptab4"><span class="when">2010 – 2019</span><b>Tech Lead · Lead Automation Architect · Performance Engineer</b><span class="org">Early career</span></button>
+      </div>
+      <div class="xp-panels">
+        <div class="xp-panel is-active" role="tabpanel" id="xp0" aria-labelledby="xptab0">
+          <div class="when">2025 – Present</div>
+          <h3>Principal Technical Program Manager (Director Level)</h3>
+          <div class="org">Deloitte Consulting · Chicago, US</div>
+          <ul>
           <li>Lead AI strategy, agent development, governance, and delivery of a $60M+ platform transformation ($3M+ P&amp;L) at a $50T+ AuC/A custodian bank.</li>
           <li>Architect the AI strategy, governance, and value-realization roadmap automating reconciliation for 50,000+ securities in Security Master.</li>
           <li>Advise the C-suite on AI readiness, risk, build vs. buy, and product vs. technology; standardized practice-wide steering governance and cadences.</li>
@@ -590,48 +610,49 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
           <li>Build and lead a 20+ person org including 10+ TPMs, institutionalizing planning, milestone tracking, and portfolio-health metrics.</li>
           <li>Scaled AI adoption from 0 to 90% through change management; Microsoft Copilot and Claude Code workflows cut delivery timelines 40%.</li>
         </ul>
-      </div>
-      <div class="tl-item reveal">
-        <div class="when">2023 – 2025</div>
-        <h3>Staff Technical Program Manager</h3>
-        <div class="org">Deloitte Consulting · Chicago, US</div>
-        <ul>
+        </div>
+        <div class="xp-panel" role="tabpanel" id="xp1" aria-labelledby="xptab1">
+          <div class="when">2023 – 2025</div>
+          <h3>Staff Technical Program Manager</h3>
+          <div class="org">Deloitte Consulting · Chicago, US</div>
+          <ul>
           <li>Led a $110M+ global digital transformation ($5M+ P&amp;L) across 200+ practitioners, forecasting revenue, utilization, and staffing against plan.</li>
           <li>Built AI/ML frameworks across the SDLC, reducing production defects 90% and improving release reliability for a global user base.</li>
           <li>Prototyped and scaled a live analytics dashboard with human-in-the-loop SME review, saving 20+ FTE equivalents across client teams.</li>
           <li>Shaped GTM pursuit strategy for a $220M+ annual pipeline, authoring AI value cases that won transformation mandates across geographies.</li>
         </ul>
-      </div>
-      <div class="tl-item reveal">
-        <div class="when">2021 – 2023</div>
-        <h3>Lead Technical Program Manager</h3>
-        <div class="org">Deloitte Consulting · Chicago, US</div>
-        <ul>
+        </div>
+        <div class="xp-panel" role="tabpanel" id="xp2" aria-labelledby="xptab2">
+          <div class="when">2021 – 2023</div>
+          <h3>Lead Technical Program Manager</h3>
+          <div class="org">Deloitte Consulting · Chicago, US</div>
+          <ul>
           <li>Delivered strategy and governance for a $70M+ ($4M+ P&amp;L) first-of-its-kind Front-to-Back implementation at a $6T+ AuM asset manager, leading 60+ people.</li>
           <li>Managed multi-vendor teams and third-party integrations across time zones for a 3-phase Fixed Income delivery spanning 10,000+ securities.</li>
           <li>Key client relationship lead, aligning Front- and Middle-office experts with the client’s global implementation leadership.</li>
           <li>Established release, milestone, risk, and change-control governance, driving 90% on-time releases and 80% fewer post-release defects.</li>
         </ul>
-      </div>
-      <div class="tl-item reveal">
-        <div class="when">2019 – 2021</div>
-        <h3>Technical Program Manager</h3>
-        <div class="org">Cognizant · Chicago, US</div>
-        <ul>
+        </div>
+        <div class="xp-panel" role="tabpanel" id="xp3" aria-labelledby="xptab3">
+          <div class="when">2019 – 2021</div>
+          <h3>Technical Program Manager</h3>
+          <div class="org">Cognizant · Chicago, US</div>
+          <ul>
           <li>Steered a $40M+ post-acquisition integration ($2M+ P&amp;L) across 15+ Agile workstreams and 6 geographies, making the client a top-10 asset servicer in a $400B+ AuM market.</li>
           <li>Drove North America and EMEA workstreams to efficiency targets, enabling nearly 100 new institutional accounts in the new geography.</li>
           <li>Coached a global team managing 60+ pre-prod environments for availability and recovery, lifting release success from 68% to 96% in 6 months.</li>
         </ul>
-      </div>
-      <div class="tl-item reveal">
-        <div class="when">2010 – 2019</div>
-        <h3>Tech Lead · Lead Automation Architect · Performance Engineer</h3>
-        <div class="org">Early career · Progressive roles</div>
-        <ul>
+        </div>
+        <div class="xp-panel" role="tabpanel" id="xp4" aria-labelledby="xptab4">
+          <div class="when">2010 – 2019</div>
+          <h3>Tech Lead · Lead Automation Architect · Performance Engineer</h3>
+          <div class="org">Early career · Progressive roles</div>
+          <ul>
           <li>Led distributed engineering teams delivering web and API automation and performance engineering for a cloud account-acquisition platform ($10M+ projected YoY growth).</li>
           <li>Held sign-off authority for a major launch, coordinating 3 Credit Reporting Agencies on a release reaching 70,000+ prospective customers annually.</li>
           <li>Designed and analyzed low-latency solutions for Options Exchange trade engines through performance, stress, and JVM testing on Unix/Linux.</li>
         </ul>
+        </div>
       </div>
     </div>
 </section>
@@ -730,6 +751,15 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
   const links = document.getElementById('navLinks');
   toggle.addEventListener('click', () => links.classList.toggle('open'));
   links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+  // Experience tabs
+  const xpTabs = document.querySelectorAll('.xp-tab');
+  xpTabs.forEach(t => t.addEventListener('click', () => {
+    xpTabs.forEach(x => { x.classList.remove('is-active'); x.setAttribute('aria-selected','false'); });
+    document.querySelectorAll('.xp-panel').forEach(p => p.classList.remove('is-active'));
+    t.classList.add('is-active'); t.setAttribute('aria-selected','true');
+    document.getElementById(t.getAttribute('aria-controls')).classList.add('is-active');
+  }));
 
   // Scroll reveal
   const io = new IntersectionObserver((entries) => {
