@@ -18,3 +18,7 @@
 index_backup*.html
 headshot.jpeg
 *.pdf
+*.jpeg
+*.jpg
+*.png
+*.docx
