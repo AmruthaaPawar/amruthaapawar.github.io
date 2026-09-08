@@ -145,38 +145,38 @@ header.nav{
 .pill:hover{transform:translateY(-2px);box-shadow:0 0 0 1px rgba(122,167,255,.45),0 0 18px rgba(31,92,255,.3),0 0 30px rgba(6,198,217,.18)}
 
 /* ===== Case studies (alternating full-width rows) ===== */
-.cases{margin-top:36px;display:flex;flex-direction:column;gap:40px}
+.cases{margin-top:32px;display:flex;flex-direction:column;gap:22px}
 .case{
-  display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;
+  display:grid;grid-template-columns:1.15fr 1fr;gap:36px;align-items:center;
   background:var(--surface);border:1px solid var(--border);border-radius:20px;
-  padding:40px;box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s,border-color .25s;
+  padding:28px 30px;box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s,border-color .25s;
   position:relative;overflow:hidden;
 }
 .case::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform .3s}
 .case:hover{transform:translateY(-4px);border-color:var(--accent-ice);box-shadow:var(--shadow),0 0 0 1px rgba(122,167,255,.45),0 0 28px rgba(31,92,255,.2)}
 .case:hover::before{transform:scaleX(1)}
 .case:nth-child(even) .case-visual{order:-1}
-.case-body .kicker{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:16px;display:inline-flex;align-items:center;gap:11px}
-.case-body .kicker .kico{width:38px;height:38px;border-radius:10px;background:rgba(31,120,230,.09);border:1px solid rgba(31,120,230,.2);display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
-.case-body h3{font-size:1.3rem;margin-bottom:14px}
-.case-body p{color:var(--muted);font-size:.97rem;margin-bottom:16px;max-width:50ch}
+.case-body .kicker{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;display:inline-flex;align-items:center;gap:11px}
+.case-body .kicker .kico{width:34px;height:34px;border-radius:10px;background:rgba(31,120,230,.09);border:1px solid rgba(31,120,230,.2);display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
+.case-body h3{font-size:1.2rem;margin-bottom:10px}
+.case-body p{color:var(--muted);font-size:.9rem;margin-bottom:10px;line-height:1.5}
 .case-body p b{color:var(--ink);font-weight:600}
-.case-scale{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.case-scale{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
 .case-scale span{font-size:.75rem;padding:5px 11px;border-radius:999px;background:rgba(31,120,230,.09);border:1px solid rgba(31,120,230,.2);color:#2b5a9e;font-weight:600}
-.case-decision{margin:0 0 20px;padding:13px 16px;border-left:3px solid var(--cyan);background:rgba(6,198,217,.07);border-radius:0 10px 10px 0;font-size:.92rem;color:var(--text);line-height:1.5}
+.case-decision{margin:0 0 12px;padding:9px 13px;border-left:3px solid var(--cyan);background:rgba(6,198,217,.07);border-radius:0 10px 10px 0;font-size:.92rem;color:var(--text);line-height:1.5}
 .case-decision b{display:block;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:4px}
-.case .metrics{display:flex;gap:32px;flex-wrap:wrap;border-top:1px solid var(--border);padding-top:20px}
-.case .metrics div b{display:block;font-family:'Montserrat';font-weight:800;font-size:1.5rem;background:var(--grad-deep);-webkit-background-clip:text;background-clip:text;color:transparent}
+.case .metrics{display:flex;gap:28px;flex-wrap:wrap;border-top:1px solid var(--border);padding-top:14px}
+.case .metrics div b{display:block;font-family:'Montserrat';font-weight:800;font-size:1.4rem;background:var(--grad-deep);-webkit-background-clip:text;background-clip:text;color:transparent}
 .case .metrics div span{color:var(--faint);font-size:.8rem}
 .case-visual{
-  aspect-ratio:5/4;border-radius:16px;position:relative;overflow:hidden;
+  aspect-ratio:4/3;max-height:330px;border-radius:16px;position:relative;overflow:hidden;
   background:var(--grad-deep);display:flex;flex-direction:column;align-items:center;justify-content:center;
   color:#fff;box-shadow:var(--shadow);
 }
 .case-visual::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.22),transparent 55%)}
-.case-visual .viz{width:72%;height:auto;margin-bottom:14px;position:relative;z-index:1;filter:drop-shadow(0 6px 14px rgba(0,0,0,.22))}
+.case-visual .viz{width:62%;height:auto;margin-bottom:10px;position:relative;z-index:1;filter:drop-shadow(0 6px 14px rgba(0,0,0,.22))}
 .case-visual .viz polyline,.case-visual .viz path[data-line]{stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
-.case-visual .headline{font-family:'Montserrat';font-weight:800;font-size:2.1rem;position:relative;z-index:1;line-height:1}
+.case-visual .headline{font-family:'Montserrat';font-weight:800;font-size:1.8rem;position:relative;z-index:1;line-height:1}
 .case-visual .sub{position:relative;z-index:1;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.85);margin-top:8px}
 
 /* ===== Leadership principles ===== */
@@ -222,25 +222,25 @@ header.nav{
 .director li .d-proof b{display:block;font-family:'Inter';font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan-soft);margin-bottom:3px;font-weight:700}
 
 /* ===== Experience timeline ===== */
-.timeline{margin-top:36px;position:relative;padding-left:30px}
+.timeline{margin-top:32px;position:relative;padding-left:30px}
 .timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--accent),var(--cyan))}
-.tl-item{position:relative;padding:0 0 42px 34px}
+.tl-item{position:relative;padding:0 0 22px 34px}
 .tl-item:last-child{padding-bottom:0}
 .tl-item::before{content:"";position:absolute;left:-30px;top:4px;width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid var(--accent);box-shadow:0 0 0 4px rgba(31,92,255,.12)}
 .tl-item .when{font-size:.8rem;color:var(--accent);font-weight:700;letter-spacing:.04em}
-.tl-item h3{font-size:1.25rem;margin:6px 0 2px}
-.tl-item .org{color:var(--muted);font-size:.95rem;margin-bottom:12px}
-.tl-item ul{list-style:none;display:grid;gap:8px}
-.tl-item li{color:var(--muted);font-size:.96rem;padding-left:22px;position:relative}
+.tl-item h3{font-size:1.15rem;margin:4px 0 2px}
+.tl-item .org{color:var(--muted);font-size:.9rem;margin-bottom:8px}
+.tl-item ul{list-style:none;display:grid;gap:5px}
+.tl-item li{color:var(--muted);font-size:.9rem;line-height:1.5;padding-left:20px;position:relative}
 .tl-item li::before{content:"▹";position:absolute;left:0;color:var(--cyan)}
 
 /* ===== Skills ===== */
-.skills-grid{display:flex;flex-direction:column;gap:8px;margin-top:28px}
-.skillcard{display:grid;grid-template-columns:215px 1fr;gap:16px;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:10px 18px 10px 20px;box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s,border-color .25s;position:relative;overflow:hidden}
+.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.skillcard{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s,border-color .25s;position:relative;overflow:hidden}
 .skillcard::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--grad);transform:scaleY(0);transform-origin:top;transition:transform .3s}
-.skillcard:hover{transform:translateX(4px);border-color:var(--accent-ice);box-shadow:var(--shadow),0 0 0 1px rgba(122,167,255,.45),0 0 26px rgba(31,92,255,.22)}
+.skillcard:hover{transform:translateY(-4px);border-color:var(--accent-ice);box-shadow:var(--shadow),0 0 0 1px rgba(122,167,255,.45),0 0 26px rgba(31,92,255,.22)}
 .skillcard:hover::before{transform:scaleY(1)}
-.skillcard h4{font-size:.94rem;margin:0;display:flex;align-items:center;gap:11px;line-height:1.25}
+.skillcard h4{font-size:1rem;margin:0 0 14px;display:flex;align-items:center;gap:11px;line-height:1.25}
 .skillcard h4 .ico{width:32px;height:32px;flex:none;border-radius:10px;background:rgba(31,120,230,.09);border:1px solid rgba(31,120,230,.2);display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
 .tags{display:flex;flex-wrap:wrap;gap:6px}
 .tags span{background:rgba(31,120,230,.09);border:1px solid rgba(31,120,230,.2);padding:3px 9px;border-radius:7px;font-size:.77rem;color:#2b5a9e;white-space:nowrap}
@@ -287,7 +287,7 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
   .director ul{grid-template-columns:1fr}
   .director{padding:30px 26px}
   .principles-grid,.two-col{grid-template-columns:1fr}
-  .skillcard{grid-template-columns:1fr;gap:12px}
+  .skills-grid{grid-template-columns:1fr}
   .tags span{white-space:normal}
   .case{grid-template-columns:1fr;gap:30px;padding:30px}
   .case:nth-child(even) .case-visual{order:0}
@@ -583,12 +583,12 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
         <h3>Principal Technical Program Manager (Director Level)</h3>
         <div class="org">Deloitte Consulting · Chicago, US</div>
         <ul>
-          <li>Lead AI strategy, agent development, governance, and delivery of a $60M+ enterprise platform transformation ($3M+ P&amp;L) at a top global custodian bank ($50T+ AuC/A).</li>
-          <li>Architect the AI strategy, governance frameworks, and value-realization roadmap automating ingestion, matching, and multi-source reconciliation for 50,000+ securities in Security Master.</li>
-          <li>Executive advisor to C-suite stakeholders on AI readiness, risk mitigation, build vs. buy, and product vs. technology trade-offs; standardized practice-wide steering governance and cadences.</li>
-          <li>Own end-to-end development of an Account Margin AI agent that compares live margin to forecast and surfaces course corrections to leadership, cutting 70% of recurring manual effort through a prompt library tuned to SME-driven evaluation criteria.</li>
-          <li>Build and lead a 20+ person organization including 10+ TPMs across concurrent engagements, institutionalizing planning, milestone tracking, and portfolio-health metrics.</li>
-          <li>Scaled AI adoption from 0 to 90% through organizational change management, standing up Microsoft Copilot and Claude Code workflows that cut delivery timelines 40%.</li>
+          <li>Lead AI strategy, agent development, governance, and delivery of a $60M+ platform transformation ($3M+ P&amp;L) at a $50T+ AuC/A custodian bank.</li>
+          <li>Architect the AI strategy, governance, and value-realization roadmap automating reconciliation for 50,000+ securities in Security Master.</li>
+          <li>Advise the C-suite on AI readiness, risk, build vs. buy, and product vs. technology; standardized practice-wide steering governance and cadences.</li>
+          <li>Own an Account Margin AI agent that compares live margin to forecast for leadership, cutting 70% of manual effort via SME-tuned evaluation.</li>
+          <li>Build and lead a 20+ person org including 10+ TPMs, institutionalizing planning, milestone tracking, and portfolio-health metrics.</li>
+          <li>Scaled AI adoption from 0 to 90% through change management; Microsoft Copilot and Claude Code workflows cut delivery timelines 40%.</li>
         </ul>
       </div>
       <div class="tl-item reveal">
@@ -596,10 +596,10 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
         <h3>Staff Technical Program Manager</h3>
         <div class="org">Deloitte Consulting · Chicago, US</div>
         <ul>
-          <li>Led a $110M+ global digital transformation program ($5M+ P&amp;L) across 200+ product, engineering, and data practitioners, forecasting revenue, utilization, and staffing against plan.</li>
-          <li>Built scalable AI/ML frameworks across the SDLC, reducing production defects by 90% and improving release reliability and output quality for the client’s global user base.</li>
-          <li>Prototyped and scaled a live analytics dashboard across multiple client teams, automating extraction and data-quality validation with human-in-the-loop SME review to save 20+ FTE equivalents.</li>
-          <li>Shaped GTM pursuit strategy and proposal design for a $220M+ annual pipeline, authoring AI value cases for C-suite buyers and winning AI product transformation mandates across geographies.</li>
+          <li>Led a $110M+ global digital transformation ($5M+ P&amp;L) across 200+ practitioners, forecasting revenue, utilization, and staffing against plan.</li>
+          <li>Built AI/ML frameworks across the SDLC, reducing production defects 90% and improving release reliability for a global user base.</li>
+          <li>Prototyped and scaled a live analytics dashboard with human-in-the-loop SME review, saving 20+ FTE equivalents across client teams.</li>
+          <li>Shaped GTM pursuit strategy for a $220M+ annual pipeline, authoring AI value cases that won transformation mandates across geographies.</li>
         </ul>
       </div>
       <div class="tl-item reveal">
@@ -607,10 +607,10 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
         <h3>Lead Technical Program Manager</h3>
         <div class="org">Deloitte Consulting · Chicago, US</div>
         <ul>
-          <li>Delivered program strategy and governance for a $70M+ ($4M+ P&amp;L), first-of-its-kind Front-to-Back implementation for Portfolio Management and Trading at a $6T+ AuM global asset manager, leading 60+ engineers, BAs, PMs, and QAs.</li>
-          <li>Managed multi-vendor, cross-functional teams and third-party platform integrations across non-overlapping time zones for a 3-phase delivery of complex Fixed Income products spanning 10,000+ securities.</li>
-          <li>Served as key client relationship leader, eliciting requirements from Front- and Middle-office experts and aligning program leadership with the client’s global implementation leads.</li>
-          <li>Established end-to-end governance across release planning, sprint and milestone tracking, and risk and change control, coaching teams to 90% on-time releases and an 80% reduction in post-release defects.</li>
+          <li>Delivered strategy and governance for a $70M+ ($4M+ P&amp;L) first-of-its-kind Front-to-Back implementation at a $6T+ AuM asset manager, leading 60+ people.</li>
+          <li>Managed multi-vendor teams and third-party integrations across time zones for a 3-phase Fixed Income delivery spanning 10,000+ securities.</li>
+          <li>Key client relationship lead, aligning Front- and Middle-office experts with the client’s global implementation leadership.</li>
+          <li>Established release, milestone, risk, and change-control governance, driving 90% on-time releases and 80% fewer post-release defects.</li>
         </ul>
       </div>
       <div class="tl-item reveal">
@@ -618,9 +618,9 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
         <h3>Technical Program Manager</h3>
         <div class="org">Cognizant · Chicago, US</div>
         <ul>
-          <li>Steered a $40M+ post-acquisition integration program ($2M+ P&amp;L) spanning 15+ Agile workstreams across 6 geographies, establishing the client as a top-10 asset servicing provider in a newly acquired $400B+ AuM market.</li>
-          <li>Drove North America and EMEA workstreams to program-wide efficiency targets, enabling the client to onboard nearly 100 new institutional accounts in the new geography.</li>
-          <li>Mentored and coached a global engineering team managing 60+ pre-prod environments for high availability and failure recovery, lifting release success from 68% to 96% within 6 months.</li>
+          <li>Steered a $40M+ post-acquisition integration ($2M+ P&amp;L) across 15+ Agile workstreams and 6 geographies, making the client a top-10 asset servicer in a $400B+ AuM market.</li>
+          <li>Drove North America and EMEA workstreams to efficiency targets, enabling nearly 100 new institutional accounts in the new geography.</li>
+          <li>Coached a global team managing 60+ pre-prod environments for availability and recovery, lifting release success from 68% to 96% in 6 months.</li>
         </ul>
       </div>
       <div class="tl-item reveal">
@@ -628,9 +628,9 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
         <h3>Tech Lead · Lead Automation Architect · Performance Engineer</h3>
         <div class="org">Early career · Progressive roles</div>
         <ul>
-          <li>Led globally distributed engineering teams delivering web and API automation and performance engineering for a new cloud-based account-acquisition application with $10M+ projected year-over-year growth.</li>
-          <li>Owned sign-off authority for a major product launch, coordinating with 3 major Credit Reporting Agencies on a release with the potential to reach 70,000+ prospective customers annually.</li>
-          <li>Designed and analyzed low-latency solutions for the trade engines of an Options Exchange through performance, stress, and JVM testing of application-layer enhancements on Unix/Linux.</li>
+          <li>Led distributed engineering teams delivering web and API automation and performance engineering for a cloud account-acquisition platform ($10M+ projected YoY growth).</li>
+          <li>Held sign-off authority for a major launch, coordinating 3 Credit Reporting Agencies on a release reaching 70,000+ prospective customers annually.</li>
+          <li>Designed and analyzed low-latency solutions for Options Exchange trade engines through performance, stress, and JVM testing on Unix/Linux.</li>
         </ul>
       </div>
     </div>
@@ -645,40 +645,20 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
     </div>
     <div class="skills-grid">
       <div class="skillcard reveal">
-        <h4><span class="ico">🧠</span> AI Strategy &amp; Governance</h4>
-        <div class="tags">
-          <span>Enterprise AI Adoption</span><span>AI Readiness</span><span>Trustworthy AI · NIST AI RMF · EU AI Act</span><span>AI Value Realization</span><span>Business Case Development</span>
-        </div>
-      </div>
-      <div class="skillcard reveal">
-        <h4><span class="ico">🤖</span> AI Engineering</h4>
-        <div class="tags">
-          <span>Agentic AI &amp; Multi-Agent Workflows</span><span>RAG &amp; Prompt Engineering</span><span>LLM Evaluation &amp; Observability</span><span>Human-in-the-Loop Design</span><span>GenAI &amp; Conversational AI</span><span>MCP (Model Context Protocol)</span>
-        </div>
+        <h4><span class="ico">🧠</span> AI Strategy, Engineering &amp; Governance</h4>
+        <div class="tags"><span>Enterprise AI Adoption</span><span>AI Readiness</span><span>AI Governance &amp; Trustworthy AI</span><span>NIST AI RMF</span><span>EU AI Act</span><span>Agentic AI &amp; Multi-Agent Workflows</span><span>RAG &amp; Prompt Engineering</span><span>LLM Evaluation &amp; Observability</span><span>Human-in-the-Loop Design</span><span>GenAI &amp; Conversational AI</span><span>AI Value Realization</span><span>Business Case Development</span></div>
       </div>
       <div class="skillcard reveal">
         <h4><span class="ico">🏛️</span> Enterprise Program Management</h4>
-        <div class="tags">
-          <span>Program Governance &amp; Delivery</span><span>Digital Transformation</span><span>Multi-Year Roadmaps</span><span>Lean Portfolio Management</span><span>SAFe · Agile · Hybrid</span><span>KPI/OKR &amp; Program Health Metrics</span><span>Risk Management</span>
-        </div>
-      </div>
-      <div class="skillcard reveal">
-        <h4><span class="ico">🔄</span> Transformation &amp; Value</h4>
-        <div class="tags">
-          <span>Operating Model Design</span><span>Value Engineering &amp; Benefits Realization</span><span>Organizational Change Management</span><span>Vendor Management</span><span>Executive Communication</span><span>Stakeholder Management</span>
-        </div>
+        <div class="tags"><span>Program Governance &amp; Delivery</span><span>Digital Transformation</span><span>Multi-Year Roadmaps</span><span>Lean Portfolio Management</span><span>SAFe · Agile · Hybrid</span><span>Operating Model Design</span><span>Value Engineering &amp; Benefits Realization</span><span>KPI/OKR &amp; Program Health Metrics</span><span>Risk Management</span><span>Organizational Change Management</span><span>Vendor Management</span></div>
       </div>
       <div class="skillcard reveal">
         <h4><span class="ico">🤝</span> Leadership &amp; Talent</h4>
-        <div class="tags">
-          <span>Global &amp; Cross-Functional Leadership</span><span>P&amp;L, Forecasting &amp; Utilization</span><span>Hiring &amp; Performance Management</span><span>Career Coaching &amp; TPM Development</span><span>Resource &amp; Demand Management</span>
-        </div>
+        <div class="tags"><span>Global &amp; Cross-Functional Team Leadership</span><span>P&amp;L Ownership, Forecasting &amp; Utilization</span><span>Executive Communication</span><span>Stakeholder Management</span><span>Hiring, Onboarding &amp; Performance Management</span><span>Career Coaching &amp; TPM Development</span><span>Resource &amp; Demand Management</span></div>
       </div>
       <div class="skillcard reveal">
         <h4><span class="ico">💻</span> Technology &amp; Tools</h4>
-        <div class="tags">
-          <span>Python</span><span>SQL</span><span>REST APIs</span><span>System Design</span><span>AWS</span><span>Azure OpenAI</span><span>Anthropic Claude Code</span><span>GitHub &amp; Microsoft Copilot</span><span>Airflow · n8n</span><span>GitHub Actions · Jenkins</span><span>JIRA · Confluence · Rovo</span>
-        </div>
+        <div class="tags"><span>Python</span><span>SQL</span><span>REST APIs</span><span>MCP (Model Context Protocol)</span><span>System Design</span><span>AWS</span><span>Azure OpenAI</span><span>Anthropic Claude Code</span><span>GitHub Copilot</span><span>Microsoft Copilot</span><span>Apache Airflow</span><span>n8n</span><span>GitHub Actions</span><span>Jenkins</span><span>JIRA · Confluence · Rovo</span></div>
       </div>
     </div>
   </div>
