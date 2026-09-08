@@ -737,6 +737,17 @@ footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color
 </footer>
 
 <script>
+  // Always land at the top: ignore a stale #hash from bookmarks/autocomplete
+  // and stop the browser restoring a previous scroll position.
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+  document.documentElement.style.scrollBehavior = 'auto';
+  window.scrollTo(0, 0);
+  window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
+    document.documentElement.style.scrollBehavior = '';
+  });
+
   // Year
   document.getElementById('yr').textContent = new Date().getFullYear();
 
